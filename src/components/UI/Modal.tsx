@@ -1,5 +1,5 @@
-import Backdrop from "./Backdrop.tsx";
-import * as React from "react";
+import Backdrop from './Backdrop.tsx';
+import * as React from 'react';
 
 interface Props extends React.PropsWithChildren {
   show: boolean;
@@ -9,14 +9,14 @@ interface Props extends React.PropsWithChildren {
 
 const Modal: React.FC<Props> = ({
   show,
-  title = "Some kinda modal title",
+  title = 'Some kinda modal title',
   children,
   onClose,
 }) => {
   return (
     <>
-      <Backdrop show={show} />
-      <div className="modal show" style={{ display: show ? "block" : "none" }}>
+      <Backdrop show={show}/>
+      <div className="modal show" style={{display: show ? 'block' : 'none'}}>
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header justify-content-between">

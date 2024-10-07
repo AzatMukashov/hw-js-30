@@ -1,6 +1,6 @@
-import Modal from "./components/UI/Modal.tsx";
-import { useState } from "react";
-import Alert from "./components/UI/Alert.tsx";
+import Modal from './components/UI/Modal.tsx';
+import { useState } from 'react';
+import Alert from './components/UI/Alert.tsx';
 
 const App = () => {
   const [showModal, setShowModal] = useState<boolean>(false);
