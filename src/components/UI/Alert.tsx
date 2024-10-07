@@ -8,7 +8,7 @@ interface Props {
 const Alert: React.FC<Props> = ({type, onDismiss, children}) => {
   const className = `alert alert-${type}`;
   return (
-    <div className={className} role="alert">
+    <div className={className}>
       {children}
       {onDismiss && (
         <button className='btn-close' onClick={onDismiss}></button>
