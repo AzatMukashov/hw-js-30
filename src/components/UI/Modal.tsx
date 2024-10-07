@@ -1,11 +1,15 @@
-const Modal = () => {
+import Backdrop from './Backdrop.tsx';
+import * as React from 'react';
+
+interface Props {
+  show: boolean;
+}
+
+const Modal: React.FC<Props> = ({show}) => {
   return (
     <>
-      <div
-        className="modal-backdrop show"
-        style={{display: 'block'}}
-      />
-      <div className="modal show" style={{display: 'block'}}>
+      <Backdrop show={show}/>
+      <div className="modal show" style={{display: show ? 'block' : 'none'}}>
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
