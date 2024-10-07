@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 interface Props {
   type: 'primary' | 'success' | 'warning' | 'danger';
   onDismiss?: () => void;
+  children: ReactNode;
 }
 
 const Alert: React.FC<Props> = ({type, onDismiss, children}) => {
