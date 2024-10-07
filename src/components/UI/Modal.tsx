@@ -16,7 +16,7 @@ const Modal: React.FC<Props> = ({show, title = 'Some kinda modal title', childre
           <div className="modal-content">
             <div className="modal-header justify-content-between">
               <h1 className="modal-title fs-5">{title}</h1>
-              <button onClick={onClose} className='btn'>X</button>
+              <button onClick={onClose} className='btn-close'></button>
             </div>
             <div className="p-2">
             {children}
